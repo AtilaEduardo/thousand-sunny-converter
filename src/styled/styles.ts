@@ -10,21 +10,22 @@ const styles = StyleSheet.create({
     textTitulo: {
       textAlign: 'center',
       fontSize: 15,
-      color: 'white',
+      color: '#FFF',
       paddingTop: 5,
       paddingLeft: 5,
+      
     },
     container: {
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#808080',
+      backgroundColor: '#101215',
       paddingTop: 40,
     },
     areaMoeda: {
       top: -250,
       width: '90%',
-      backgroundColor: 'greyLight',
+      backgroundColor: '#F9F9F9',
       paddingTop: 9,
       borderTopLeftRadius: 9,
       borderTopRightRadius: 9,
@@ -32,14 +33,14 @@ const styles = StyleSheet.create({
     },
     textMoeda: {
       fontSize: 15,
-      color: 'black',
+      color: '#000',
       paddingTop: 5,
       paddingLeft: 5,
     },
     areaValor: {
       top: -250,
       width: '90%',
-      backgroundColor: 'greyLight',
+      backgroundColor: '#F9F9F9',
       paddingBottom: 9,
       paddingTop: 9,
     },
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
       height: 45,
       fontSize: 20,
       marginTop: 8,
-      color: 'black',
+      color: '#000',
     },
     btnArea: {
       top: -250,
@@ -63,7 +64,7 @@ const styles = StyleSheet.create({
     },
     btnText: {
       fontSize: 18,
-      color: 'white',
+      color: '#FFF',
       fontWeight: 'bold',
     },
     areaResultado: {
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
     valorConvertido: {
       fontSize: 39,
       fontWeight: 'bold',
-      color: 'white',
+      color: '#FFF',
     },
     viewLoading: {
       alignItems: 'center',
