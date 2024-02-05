@@ -1,4 +1,3 @@
-import Cores from "../configuracao/config";
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
@@ -11,7 +10,7 @@ const styles = StyleSheet.create({
     textTitulo: {
       textAlign: 'center',
       fontSize: 15,
-      color: Cores.white,
+      color: 'white',
       paddingTop: 5,
       paddingLeft: 5,
     },
@@ -19,13 +18,13 @@ const styles = StyleSheet.create({
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: Cores.grey,
+      backgroundColor: '#808080',
       paddingTop: 40,
     },
     areaMoeda: {
       top: -250,
       width: '90%',
-      backgroundColor: Cores.greyLight,
+      backgroundColor: 'greyLight',
       paddingTop: 9,
       borderTopLeftRadius: 9,
       borderTopRightRadius: 9,
@@ -33,14 +32,14 @@ const styles = StyleSheet.create({
     },
     textMoeda: {
       fontSize: 15,
-      color: Cores.black,
+      color: 'black',
       paddingTop: 5,
       paddingLeft: 5,
     },
     areaValor: {
       top: -250,
       width: '90%',
-      backgroundColor: Cores.greyLight,
+      backgroundColor: 'greyLight',
       paddingBottom: 9,
       paddingTop: 9,
     },
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
       height: 45,
       fontSize: 20,
       marginTop: 8,
-      color: Cores.black,
+      color: 'black',
     },
     btnArea: {
       top: -250,
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
     },
     btnText: {
       fontSize: 18,
-      color: Cores.white,
+      color: 'white',
       fontWeight: 'bold',
     },
     areaResultado: {
@@ -78,7 +77,7 @@ const styles = StyleSheet.create({
     valorConvertido: {
       fontSize: 39,
       fontWeight: 'bold',
-      color: Cores.white,
+      color: 'white',
     },
     viewLoading: {
       alignItems: 'center',

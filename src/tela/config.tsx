@@ -1,5 +1,4 @@
 import { ActivityIndicator, Alert, Keyboard, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import Cores from './../configuracao/config';
 import Api from './../api/api';
 import Seletor from './../components/index';
 import { useEffect, useState } from 'react';
@@ -56,7 +55,7 @@ export default function Tela() {
   if (carregamento) {
     return (
       <View style={styles.viewLoading}>
-        <ActivityIndicator color={Cores.black} size={45} />
+        <ActivityIndicator color={'black'} size={45} />
       </View>
     );
   } else {
