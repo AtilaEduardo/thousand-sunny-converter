@@ -1,5 +1,5 @@
 import React from 'react';
-import RNPickerSelect from 'react-native-picker-select';
+import RNPickerSelect, { Item } from 'react-native-picker-select';
 
 const Seletor = (props: any) => {
     const placeHolder = {
