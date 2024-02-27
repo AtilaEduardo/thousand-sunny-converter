@@ -5,19 +5,25 @@ import Seletor from '../seletor/seletor';
 import { styles } from '../../styled/styles';
 import localStorage from '../../banco/localStorage';
 
+interface Moeda {
+  key: string;
+  label: string;
+  value: string;
+}
+
 export function Tela() {
-  const [moeda, setMoeda] = useState([]);
-  const [carregamento, setCarregamento] = useState(true);
-  const [moedaEscolhida, setMoedaEscolhida] = useState(null);
-  const [moeda2Valor, setMoeda2Valor] = useState(0);
-  const [valorMoeda, setValorMoeda] = useState('');
-  const [valorConvertido, setValorConvertido] = useState(0);
+  const [moeda, setMoeda] = useState<Moeda[]>([]);
+  const [carregamento, setCarregamento] = useState<boolean>(true);
+  const [moedaEscolhida, setMoedaEscolhida] = useState<string | null>(null);
+  const [moeda2Valor, setMoeda2Valor] = useState<number>(0);
+  const [valorMoeda, setValorMoeda] = useState<string>('');
+  const [valorConvertido, setValorConvertido] = useState<number>(0);
   const { salvarStorage } = localStorage();
 
   useEffect(() => {
     async function carregarMoedas() {
       const resposta = await Api.get('all');
-      let vetorMoedas = [];
+      let vetorMoedas: Moeda[] = [];
       Object.keys(resposta.data).map(key => {
         vetorMoedas.push({
           key: key,
@@ -40,9 +46,9 @@ export function Tela() {
     const resposta = await Api.get(`all/${moedaEscolhida}-BRL`);
     const resultado = resposta.data[moedaEscolhida].ask * parseFloat(valorMoeda);
 
-    setValorConvertido(resultado.toFixed(2));
+    setValorConvertido(parseFloat(resultado.toFixed(2)));
     await salvarStorage("@pass", valorMoeda, moedaEscolhida, resultado.toFixed(2));
-    setMoeda2Valor(valorMoeda);
+    setMoeda2Valor(parseFloat(valorMoeda));
     Keyboard.dismiss();
   }
 

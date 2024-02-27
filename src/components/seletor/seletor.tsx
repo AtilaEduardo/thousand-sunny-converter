@@ -1,7 +1,17 @@
 import React from 'react';
-import RNPickerSelect, { Item } from 'react-native-picker-select';
+import RNPickerSelect from 'react-native-picker-select';
 
-const Seletor = (props: any) => {
+interface Moeda {
+    label: string;
+    value: string;
+}
+
+interface SeletorProps {
+    moeda: Moeda[];
+    onChange: (valor: string | null) => void;
+}
+
+const Seletor: React.FC<SeletorProps> = (props) => {
     const placeHolder = {
         label: 'Selecione sua Moeda',
         value: null,
@@ -12,19 +22,17 @@ const Seletor = (props: any) => {
         <RNPickerSelect
             placeholder={placeHolder}
             items={props.moeda}
-            onValueChange={valor => props.onChange(valor)}
-            style={
-                {
-                    inputAndroid: {
-                        fontSize: 20,
-                        color: 'black',
-                    },
-
-                    inputIOS:{
-                        fontSize: 20,
-                        color: 'black',
-                    }
-                }} />
+            onValueChange={(valor) => props.onChange(valor)}
+            style={{
+                inputAndroid: {
+                    fontSize: 20,
+                    color: 'black',
+                },
+                inputIOS: {
+                    fontSize: 20,
+                    color: 'black',
+                }
+            }} />
     );
 }
 
