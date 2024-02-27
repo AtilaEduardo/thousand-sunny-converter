@@ -2,7 +2,7 @@
   "expo": {
     "name": "thousand-sunny-converter",
     "slug": "thousand-sunny-converter",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/Sed-38-512.png",
     "userInterfaceStyle": "automatic",
