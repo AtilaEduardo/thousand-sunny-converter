@@ -4,8 +4,8 @@
     "slug": "thousand-sunny-converter",
     "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/Sed-38-512.webp",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/Sed-38-512.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Sed-38-512.webp",
+        "foregroundImage": "./assets/Sed-38-512.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.atilacsc.thousandsunnyconverter"

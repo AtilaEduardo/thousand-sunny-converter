@@ -27,7 +27,7 @@ export function ConversaoSalva() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Image source={require('../../../assets/Sed-38-512.webp')} />
+            <Image source={require('../../../assets/Sed-38-512.png')} />
             <View style={styles.header}>
             </View>
 
