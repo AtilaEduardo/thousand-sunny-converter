@@ -25,7 +25,7 @@
       "package": "com.atilacsc.thousandsunnyconverter"
     },
     "web": {
-      "favicon": "./assets/Sed-38-512.webp"
+      "favicon": "./assets/icon.png"
     },
     "extra": {
       "eas": {
