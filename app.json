@@ -4,7 +4,7 @@
     "slug": "thousand-sunny-converter",
     "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Sed-38-512.png",
+    "icon": "./assets/Sed-38-512.webp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
@@ -19,13 +19,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Sed-38-512.png",
+        "foregroundImage": "./assets/Sed-38-512.webp",
         "backgroundColor": "#ffffff"
       },
       "package": "com.atilacsc.thousandsunnyconverter"
     },
     "web": {
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/Sed-38-512.webp"
     },
     "extra": {
       "eas": {
