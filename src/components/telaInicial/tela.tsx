@@ -61,7 +61,7 @@ export function Tela() {
   } else {
     return (
       <View style={styles.container}>
-        <Image source={require('../../../assets/Sed-38-512.png')} />
+        <Image source={require('../../../assets/Sed-38-512.webp')} />
         <View style={styles.titulo}>
           <Text style={styles.textTitulo}>THOUSAND SUNNY CONVERTER</Text>
         </View>
